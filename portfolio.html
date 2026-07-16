@@ -1,374 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Srinithi R | Portfolio</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: #0f0f0f;
-      color: #eaeaea;
-      line-height: 1.6;
-    }
-
-    /* Navbar */
-    nav {
-      position: fixed;
-      width: 100%;
-      background: #111;
-      padding: 15px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    nav h2 {
-      color: #00e5ff;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-    }
-
-    nav ul li {
-      margin-left: 25px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #eaeaea;
-      font-weight: 500;
-    }
-
-    nav ul li a:hover {
-      color: #00e5ff;
-    }
-
-    section {
-      padding: 100px 80px;
-      min-height: 100vh;
-    }
-
-    /* Hero Section */
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 50px;
-    }
-
-    .hero-text h1 {
-      font-size: 3rem;
-      color: #00e5ff;
-    }
-
-    .hero-text p {
-      margin-top: 15px;
-      max-width: 600px;
-    }
-
-    /* Profile Photo Frame */
-    .profile-frame {
-      width: 260px;
-      height: 260px;
-<<<<<<< HEAD
-      border-radius: 50%;
-=======
-      border-radius: 20px;
->>>>>>> c56f1a082d5d9d8e9f2c26586f7804ec4238f820
-      border: 4px solid #00e5ff;
-      overflow: hidden;
-      box-shadow: 0 0 25px rgba(0,229,255,0.4);
-    }
-
-    .profile-frame img {
-      width: 100%;
-      height: 100%;
-<<<<<<< HEAD
-      border-radius: 50%;
-=======
->>>>>>> c56f1a082d5d9d8e9f2c26586f7804ec4238f820
-      object-fit: cover;
-    }
-
-    h2.section-title {
-      font-size: 2.2rem;
-      color: #00e5ff;
-      margin-bottom: 30px;
-    }
-
-    .card {
-      background: #181818;
-      padding: 25px;
-      border-radius: 15px;
-      margin-bottom: 25px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    }
-
-    .skills span {
-      display: inline-block;
-      background: #00e5ff;
-      color: #000;
-      padding: 8px 15px;
-      margin: 8px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 20px;
-      color: #aaa;
-    }
-
-    a {
-      color: #00e5ff;
-    }
-
-    @media(max-width: 900px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-      nav {
-        padding: 15px 25px;
-      }
-      section {
-        padding: 100px 30px;
-      }
-    }
-
-    .skills-icons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 25px;
-  text-align: center;
-}
-
-.skill {
-  background: #111;
-  padding: 25px 10px;
-  border-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill i {
-  font-size: 40px;
-  color: #00e5ff;
-  margin-bottom: 10px;
-}
-
-.skill p {
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.skill:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0,229,255,0.4);
-}
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinithi R | Creative Developer</title>
+    <meta name="description" content="Portfolio of Srinithi R, a Full Stack Developer & Computer Science Student.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-<!-- Navbar -->
-<nav>
-  <h2>Srinithi</h2>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <!-- Interactive Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
 
-<!-- Hero -->
-<section class="hero" id="home">
-  <div class="hero-text" data-aos="fade-right">
-    <h1>Srinithi R</h1>
-    <p>
-      B.E Computer Science & Engineering student with strong interest in
-      web and mobile application development. Passionate about building
-      user-focused software solutions.
-    </p>
-  </div>
+    <!-- Animated Grid Overlay -->
+    <div class="grid-overlay"></div>
 
-  <!-- PROFILE PHOTO FRAME -->
-  <div class="profile-frame" data-aos="fade-left">
-    <!-- 🔽 Replace this URL with your profile photo link -->
-<<<<<<< HEAD
-    <img src="sri1.png" alt="Profile Photo">
-=======
-    <img src="https://via.placeholder.com/300" alt="Profile Photo">
->>>>>>> c56f1a082d5d9d8e9f2c26586f7804ec4238f820
-  </div>
-</section>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo magnetic">Sr<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="magnetic-text">Home</a></li>
+                <li><a href="#about" class="magnetic-text">About</a></li>
+                <li><a href="#skills" class="magnetic-text">Expertise</a></li>
+                <li><a href="#projects" class="magnetic-text">Work</a></li>
+                <li><a href="#experience" class="magnetic-text">Journey</a></li>
+                <li><a href="#contact" class="magnetic-text">Connect</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-<!-- About -->
-<section id="about">
-  <h2 class="section-title" data-aos="fade-up">About Me</h2>
-  <div class="card" data-aos="fade-up">
-    <p>
-<<<<<<< HEAD
-Here’s a polished 10-line paragraph based on your content:
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge reveal-up">Available for opportunities</div>
+                <h1 class="name reveal-up" style="transition-delay: 0.1s;">
+                    Creative<br>
+                    <span class="gradient-text">Developer.</span>
+                </h1>
+                <h2 class="role reveal-up" style="transition-delay: 0.2s;">
+                    <span class="typing-text"></span><span class="cursor-blink">&nbsp;</span>
+                </h2>
+                <p class="summary reveal-up" style="transition-delay: 0.3s;">I'm <strong>Srinithi R</strong>. I craft immersive digital experiences, bridging the gap between elegant design and complex engineering.</p>
+                <div class="hero-btns reveal-up" style="transition-delay: 0.4s;">
+                    <a href="#projects" class="btn primary-btn magnetic">Explore Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/Srinithi-29" target="_blank" class="btn icon-btn magnetic"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/srinithi-rathinam-415b652a2" target="_blank" class="btn icon-btn magnetic"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <!-- 3D Floating Element -->
+            <div class="hero-visual reveal-right" style="transition-delay: 0.3s;">
+                <div class="sphere-wrapper magnetic-area">
+                    <div class="glass-sphere">
+                        <div class="sphere-inner"><i class="fas fa-code"></i></div>
+                    </div>
+                    <div class="floating-tag tag-1">React</div>
+                    <div class="floating-tag tag-2">Node.js</div>
+                    <div class="floating-tag tag-3">Python</div>
+                    <div class="floating-tag tag-4">Java</div>
+                    <div class="floating-tag tag-5">C</div>
+                    <div class="floating-tag tag-6">JavaScript</div>
+                    <div class="floating-tag tag-7">HTML/CSS</div>
+                    <div class="floating-tag tag-8">MongoDB</div>
+                    <div class="floating-tag tag-9">Tailwind</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
 
-Enthusiastic and self-driven Computer Science student currently pursuing B.E in CSE at Nandha Engineering College. Passionate about web and mobile application development with a strong interest in building real-world software solutions. Experienced in working with modern technologies like React, Node.js, and databases. Enjoy collaborating in team-based environments and contributing to project success. Possess good problem-solving and analytical skills. Quick learner with the ability to adapt to new technologies. Strong communication and teamwork abilities. Dedicated to continuous learning and skill improvement. Interested in developing innovative and user-friendly applications. Seeking opportunities to apply and enhance technical knowledge in real-world projects.
-
-=======
-      Enthusiastic and self-driven Computer Science student currently pursuing
-      B.E CSE at Nandha Engineering College. I enjoy working on real-world
-      software projects and collaborating in development teams.
->>>>>>> c56f1a082d5d9d8e9f2c26586f7804ec4238f820
-    </p>
-  </div>
-</section>
-
-<!-- Skills -->
-<section id="skills">
-  <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
-
-  <div class="card skills-icons" data-aos="zoom-in">
-
-    <div class="skill">
-      <i class="fa-brands fa-html5"></i>
-      <p>HTML</p>
+    <!-- Marquee Divider -->
+    <div class="marquee-container">
+        <div class="marquee">
+            <span>FULL STACK</span> • <span>UI/UX</span> • <span>MOBILE APPS</span> • <span>AI ENTHUSIAST</span> • 
+            <span>FULL STACK</span> • <span>UI/UX</span> • <span>MOBILE APPS</span> • <span>AI ENTHUSIAST</span> • 
+            <span>FULL STACK</span> • <span>UI/UX</span> • <span>MOBILE APPS</span> • <span>AI ENTHUSIAST</span> • 
+        </div>
     </div>
 
-    <div class="skill">
-      <i class="fa-brands fa-css3-alt"></i>
-      <p>CSS</p>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title outline-title reveal-up">01. <span>About</span></h2>
+            <div class="about-grid">
+                <div class="about-visual reveal-left">
+                    <div class="image-frame tilt-element">
+                        <div class="frame-content">
+                            <h2>Srinithi R</h2>
+                            <p>B.E. Computer Science '27</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Erode, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h3 class="gradient-text">Engineering with Purpose</h3>
+                    <p>Enthusiastic and self-driven Computer Science student with hands-on experience in web and mobile application development. Skilled in building user-focused solutions and collaborating effectively in development teams.</p>
+                    <p>Seeking opportunities to apply and expand my technical abilities in real-world software projects, pushing the boundaries of what's possible in the browser.</p>
+                    
+                    <div class="interests-container">
+                        <h4>When I'm not coding:</h4>
+                        <div class="interests-tags">
+                            <span class="glitch-tag" data-text="Art & Craft">Art & Craft</span>
+                            <span class="glitch-tag" data-text="Social Welfare">Social Welfare</span>
+                            <span class="glitch-tag" data-text="AI Tech">AI Tech</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="skill">
-      <i class="fa-brands fa-js"></i>
-      <p>JavaScript</p>
-    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title outline-title reveal-up">02. <span>Expertise</span></h2>
+            
+            <div class="skills-showcase">
+                <div class="skill-pillar tilt-element reveal-up">
+                    <div class="pillar-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Frontend</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-label">React / JS</div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-label">HTML / CSS</div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-label">Tailwind CSS</div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                    </div>
+                </div>
 
-    <div class="skill">
-      <i class="fa-brands fa-react"></i>
-      <p>React</p>
-    </div>
+                <div class="skill-pillar tilt-element reveal-up" style="transition-delay: 0.1s;">
+                    <div class="pillar-icon"><i class="fas fa-database"></i></div>
+                    <h3>Backend</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-label">Node / Express</div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-label">MongoDB / SQL</div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-label">Python</div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+                    </div>
+                </div>
 
-    <div class="skill">
-      <i class="fa-brands fa-react"></i>
-      <p>React Native</p>
-    </div>
+                <div class="skill-pillar tilt-element reveal-up" style="transition-delay: 0.2s;">
+                    <div class="pillar-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Core & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Java (OOP)</span>
+                        <span>C</span>
+                        <span>Git/GitHub</span>
+                        <span>AWS (Basics)</span>
+                        <span>Cyber Security</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="skill">
-      <i class="fa-brands fa-node-js"></i>
-      <p>Node.js</p>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title outline-title reveal-up">03. <span>Selected Work</span></h2>
+            
+            <div class="creative-projects">
+                <!-- Project 1 -->
+                <div class="creative-card tilt-element reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="project-header">
+                            <span class="project-year">2026</span>
+                            <div class="project-links">
+                                <a href="https://hvms-complete.onrender.com/" target="_blank" class="magnetic"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="gradient-text">Heavy Vehicle Management</h3>
+                        <p class="tech-stack-creative">MERN Stack • Render • Auth</p>
+                        <p class="desc">Complete full-stack application featuring role-based dashboards, secure APIs, and real-time tracking for workflow visibility.</p>
+                        <div class="bg-icon"><i class="fas fa-truck"></i></div>
+                    </div>
+                </div>
 
-    <div class="skill">
-      <i class="fa-solid fa-database"></i>
-      <p>MongoDB</p>
-    </div>
+                <!-- Project 2 -->
+                <div class="creative-card tilt-element reveal-up" style="transition-delay: 0.1s;">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="project-header">
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="gradient-text">Venba Farms App</h3>
+                        <p class="tech-stack-creative">Mobile • MongoDB • API</p>
+                        <p class="desc">Leading a client-based mobile app team, coordinating complex API integrations and data architecture for production release.</p>
+                        <div class="bg-icon"><i class="fas fa-seedling"></i></div>
+                    </div>
+                </div>
 
-    <div class="skill">
-      <i class="fa-solid fa-database"></i>
-      <p>MySQL</p>
-    </div>
+                <!-- Project 3 -->
+                <div class="creative-card tilt-element reveal-up" style="transition-delay: 0.2s;">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="project-header">
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="gradient-text">Sign Language AI</h3>
+                        <p class="tech-stack-creative">Computer Vision • ML • Python</p>
+                        <p class="desc">Video-based sign language recognition system utilizing machine learning concepts to detect and translate real-time gestures.</p>
+                        <div class="bg-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="skill">
-      <i class="fa-brands fa-java"></i>
-      <p>Java</p>
-    </div>
+    <!-- Journey Section -->
+    <section id="experience" class="journey section">
+        <div class="container">
+            <h2 class="section-title outline-title reveal-up">04. <span>Journey</span></h2>
+            
+            <div class="journey-track">
+                <div class="journey-node reveal-up">
+                    <div class="node-point"></div>
+                    <div class="node-content glass-panel tilt-element">
+                        <div class="node-date">2 Months + 1 Month Internship</div>
+                        <h3>SkillVertex</h3>
+                        <h4>Full-Stack Developer Intern</h4>
+                        <p>Dived deep into backend logic, API development, and debugging complex real-time applications within a professional team environment.</p>
+                    </div>
+                </div>
+                
+                <div class="journey-node reveal-up" style="transition-delay: 0.1s;">
+                    <div class="node-point"></div>
+                    <div class="node-content glass-panel tilt-element">
+                        <div class="node-date">15 Days</div>
+                        <h3>Nextskill</h3>
+                        <h4>React & Node Intern</h4>
+                        <p>Solidified foundational knowledge working directly with React components, Node.js servers, and MongoDB database modeling.</p>
+                    </div>
+                </div>
 
-    <div class="skill">
-      <i class="fa-brands fa-python"></i>
-      <p>Python</p>
-    </div>
+                <div class="journey-node reveal-up" style="transition-delay: 0.2s;">
+                    <div class="node-point"></div>
+                    <div class="node-content glass-panel tilt-element">
+                        <div class="node-date">15 Days</div>
+                        <h3>Nithra Apps</h3>
+                        <h4>Web Dev Intern</h4>
+                        <p>Gained practical industry exposure to full-stack workflows, focusing on smooth frontend-to-backend integration strategies.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cert-marquee-container reveal-up" style="margin-top: 5rem;">
+                <h3 class="centered-heading">Certifications & Badges</h3>
+                <div class="cert-marquee">
+                    <div class="cert-item"><i class="fas fa-cloud"></i> Cloud Computing</div>
+                    <div class="cert-item"><i class="fas fa-shield-alt"></i> Cyber Security</div>
+                    <div class="cert-item"><i class="fas fa-user-shield"></i> Social Media Privacy</div>
+                    <!-- Duplicate for infinite scroll -->
+                    <div class="cert-item"><i class="fas fa-cloud"></i> Cloud Computing</div>
+                    <div class="cert-item"><i class="fas fa-shield-alt"></i> Cyber Security</div>
+                    <div class="cert-item"><i class="fas fa-user-shield"></i> Social Media Privacy</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="skill">
-      <i class="fa-solid fa-code"></i>
-      <p>C++</p>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title outline-title reveal-up">05. <span>Connect</span></h2>
+            
+            <div class="contact-creative glass-panel reveal-up">
+                <div class="contact-text">
+                    <h3 class="gradient-text">Let's build something extraordinary.</h3>
+                    <p>I'm always open to discussing product design work, new projects, or partnership opportunities.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:nithix.17@gmail.com" class="contact-link magnetic">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span class="text">nithix.17@gmail.com</span>
+                        </a>
+                        <a href="tel:+919080207771" class="contact-link magnetic">
+                            <span class="icon"><i class="fas fa-phone"></i></span>
+                            <span class="text">+91 9080207771</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/srinithi-rathinam-415b652a2" target="_blank" class="contact-link magnetic">
+                            <span class="icon"><i class="fab fa-linkedin"></i></span>
+                            <span class="text">LinkedIn Profile</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="creative-form" onsubmit="event.preventDefault(); alert('Message feature coming soon! Please use email links.');">
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="btn primary-btn magnetic" style="width: 100%;">Send <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="skill">
-      <i class="fa-brands fa-github"></i>
-      <p>GitHub</p>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Sr<span>.</span></div>
+            <p>&copy; 2026 Srinithi R. Designed & Engineered with passion.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Srinithi-29" target="_blank" class="magnetic"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/srinithi-rathinam-415b652a2" target="_blank" class="magnetic"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 
-    <div class="skill">
-      <i class="fa-brands fa-figma"></i>
-      <p>Figma</p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- Projects -->
-<section id="projects">
-  <h2 class="section-title" data-aos="fade-up">Projects</h2>
-
-  <div class="card" data-aos="fade-right">
-    <h3>Poultry Farm Management Mobile App</h3>
-    <p>
-      Consultancy-based mobile application to monitor farm activities
-      efficiently.
-      <br><strong>Tech:</strong> React (Expo), Node.js, MongoDB
-    </p>
-  </div>
-
-  <div class="card" data-aos="fade-left">
-    <h3>Heavy Vehicle Management System</h3>
-    <p>
-      Web application to manage vehicle assignments, billing, logs, and staff salary.
-      <br><strong>Tech:</strong> React, Node.js, MongoDB
-    </p>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-  <h2 class="section-title" data-aos="fade-up">Contact</h2>
-  <div class="card" data-aos="zoom-in">
-    <p>📍 Dharapuram</p>
-    <p>📞 9080207771</p>
-    <p>📧 nithix.17@gmail.com</p>
-    <p>🔗 GitHub: <a href="https://github.com/Srinithi-29" target="_blank">github.com/Srinithi-29</a></p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Srinithi R | Portfolio
-</footer>
-
-<!-- AOS Script -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
-
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
