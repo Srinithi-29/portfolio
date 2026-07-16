@@ -132,6 +132,82 @@ document.addEventListener('DOMContentLoaded', () => {
         animateCanvas();
     }
 
+    // --- 2.5 3D Sphere Manual Rotation ---
+    const sphere = document.querySelector('.sphere-wrapper');
+    if (sphere) {
+        // Disable CSS animation so JS can take over
+        sphere.style.animation = 'none';
+        
+        let isDragging = false;
+        let previousMousePosition = { x: 0, y: 0 };
+        // Initial rotation
+        let rotation = { x: 10, y: 0 };
+        
+        // Auto-spin variables
+        let autoSpin = true;
+        let autoSpinSpeed = 0.5; // degrees per frame
+        
+        // Update transform
+        const updateSphereTransform = () => {
+            sphere.style.transform = `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`;
+        };
+        
+        // Animation loop for auto-spin
+        const animateSphere = () => {
+            if (autoSpin && !isDragging) {
+                rotation.y += autoSpinSpeed;
+                updateSphereTransform();
+            }
+            requestAnimationFrame(animateSphere);
+        };
+        animateSphere();
+        
+        // Drag events
+        const startDrag = (e) => {
+            isDragging = true;
+            sphere.style.cursor = 'grabbing';
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            previousMousePosition = { x: clientX, y: clientY };
+        };
+        
+        const onDrag = (e) => {
+            if (!isDragging) return;
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            
+            const deltaMove = {
+                x: clientX - previousMousePosition.x,
+                y: clientY - previousMousePosition.y
+            };
+            
+            rotation.y += deltaMove.x * 0.5;
+            rotation.x -= deltaMove.y * 0.5;
+            
+            // Clamp X rotation so it doesn't flip completely
+            rotation.x = Math.max(-80, Math.min(80, rotation.x));
+            
+            updateSphereTransform();
+            
+            previousMousePosition = { x: clientX, y: clientY };
+        };
+        
+        const stopDrag = () => {
+            isDragging = false;
+            sphere.style.cursor = 'grab';
+        };
+        
+        sphere.style.cursor = 'grab';
+        sphere.addEventListener('mousedown', startDrag);
+        window.addEventListener('mousemove', onDrag);
+        window.addEventListener('mouseup', stopDrag);
+        
+        // Touch support
+        sphere.addEventListener('touchstart', startDrag, { passive: true });
+        window.addEventListener('touchmove', onDrag, { passive: true });
+        window.addEventListener('touchend', stopDrag);
+    }
+
     // --- 3. 3D Tilt Effect on Elements ---
     const tiltElements = document.querySelectorAll('.tilt-element');
     tiltElements.forEach(el => {
