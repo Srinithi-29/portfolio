@@ -135,6 +135,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 3. 3D Tilt Effect on Elements ---
     const tiltElements = document.querySelectorAll('.tilt-element');
     tiltElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            el.style.transition = 'none'; // Instantly follow mouse without lag
+        });
+
         el.addEventListener('mousemove', (e) => {
             const rect = el.getBoundingClientRect();
             const x = e.clientX - rect.left;
@@ -150,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         el.addEventListener('mouseleave', () => {
+            el.style.transition = 'all 0.5s ease';
             el.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
         });
     });
@@ -200,6 +205,12 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
+                
+                // Clear inline transition delay after reveal so it doesn't affect hovers
+                setTimeout(() => {
+                    entry.target.style.transitionDelay = '0s';
+                }, 1000);
+                
                 observer.unobserve(entry.target);
             }
         });
